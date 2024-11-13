@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import include, path
-from .views import TodoAPIView, TodosAPIView
+from .views import  TodosAPIView
 
 urlpatterns = [
-    path('todo/', TodosAPIView.as_view()),
+    path('', TodosAPIView.as_view()),
 ]

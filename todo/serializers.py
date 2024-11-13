@@ -6,3 +6,9 @@ class TodoSimpleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
         fields = ('id', 'title', 'complete', 'important')
+
+class TodoCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Todo
+        fields = "__all__"
+        #fields = ('title', 'description')
